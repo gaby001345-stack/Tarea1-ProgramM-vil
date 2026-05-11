@@ -3,10 +3,13 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   //a) Uso de funciones y variales para el usuario con su saludo personalizado
-  const username: string="Jose";
- 
+  const username: string="Gabriela";
+  
+  const saludarUsuario=(nombre:string):string=>{
+  return `¡Mucho gusto, ${nombre}!, bienvenid@ seas a mi aplicación jeje :3`;
+};
   //b) Usar variable para definir edad con operador ternario
-  const edad =17;
+  const edad =19;
   const mensajeedad: string=edad>=18 ? "Es mayor de edad" : "Es menor de edad";
  
   //c) Arreglo de objetos (lista de clases)
@@ -33,9 +36,6 @@ export default function App() {
     </View>
   );
 }
-const saludarUsuario=(nombre:string):string=>{
-  return `¡Mucho gusto, ${nombre}!, bienvenid@ seas a mi aplicación jeje :3`;
-};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
